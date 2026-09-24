@@ -18,6 +18,24 @@ public class Carta {
     }
 
     public String toString(){
-        return valor + " de " + tipo;
+        String nombreValor;
+        switch (valor){
+            case 1:
+                nombreValor = "AS";
+                break;
+            case 11:
+                nombreValor = "JOTA";
+                break;
+            case 12:
+                nombreValor = "REINA";
+                break;
+            case 13:
+                nombreValor = "REY";
+                break;
+            default:
+                nombreValor = String.valueOf(valor);
+                break;
+        }
+        return "[" + nombreValor + " de " + tipo + "]";
     }
 }

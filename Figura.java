@@ -4,5 +4,5 @@ public enum Figura {
     CORAZONES,
     TREBOLES,
     DIAMANTES,
-    PICAS
+    ESPADAS
 }
